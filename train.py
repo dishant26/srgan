@@ -21,7 +21,7 @@ n_epoch = config.TRAIN.n_epoch
 # create folders to save result images and trained models
 save_dir = "samples"
 tlx.files.exists_or_mkdir(save_dir)
-checkpoint_dir = "models"
+checkpoint_dir = "./srgan/models"
 tlx.files.exists_or_mkdir(checkpoint_dir)
 
 hr_transform = Compose([
